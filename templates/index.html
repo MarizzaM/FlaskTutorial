@@ -1,27 +1,5 @@
-<!doctype html>
-<html>
-<head>
-    <title>Home page</title>
-    </head>
-    <body>
-
-<!--	    {% if content == "true" %}-->
-<!--            <p>True!</p>-->
-<!--        {% else %}-->
-<!--            <p>False :(</p>-->
-<!--        {% endif %}-->
-
-<!--    <h1>Home Page!</h1>-->
-<!--    {% for x in range(10) %}-->
-<!--            {% if x % 2 ==1 %}-->
-<!--                <p>{{x}}</p>-->
-<!--            {% endif %}-->
-<!--    {% endfor %}-->
-
-    <h1>Home Page!</h1>
-        {% for x in content %}
-            <p>{{x}}</p>
-        {% endfor %}
-
-    </body>
-</html>
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<h1>Test</h1>
+{% endblock %}
